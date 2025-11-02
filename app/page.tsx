@@ -137,7 +137,11 @@ export default function Home() {
             
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-5 text-white shadow-lg transform hover:scale-105 transition-transform">
               <div className="text-3xl mb-2">🌐</div>
-              <div className="text-3xl font-bold">{filters.type === 'kandilli' ? 'KAN' : 'AFAD'}</div>
+              <div className="text-3xl font-bold">
+                {filters.type === 'kandilli' ? 'KAN' : 
+                 filters.type === 'afad' ? 'AFAD' : 
+                 filters.type === 'depremio' ? 'D.IO' : 'USGS'}
+              </div>
               <div className="text-sm opacity-90">Kaynak</div>
             </div>
           </div>
@@ -168,6 +172,8 @@ export default function Home() {
               >
                 <option value="kandilli">🏛️ Kandilli Rasathanesi</option>
                 <option value="afad">🚨 AFAD</option>
+                <option value="depremio">⚡ Deprem.io (Anlık)</option>
+                <option value="usgs">🌍 USGS (Dünya Çapında)</option>
               </select>
             </div>
 
@@ -344,7 +350,9 @@ export default function Home() {
                 Deprem Verileri Yükleniyor...
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm">
-                {filters.type === 'kandilli' ? 'Kandilli Rasathanesi' : 'AFAD'} verilerine bağlanılıyor
+                {filters.type === 'kandilli' ? 'Kandilli Rasathanesi' : 
+                 filters.type === 'afad' ? 'AFAD' :
+                 filters.type === 'depremio' ? 'Deprem.io' : 'USGS'} verilerine bağlanılıyor
               </p>
             </div>
           </div>

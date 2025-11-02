@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getKandilliData } from '@/lib/scrapers/kandilli';
 import { getAfadData } from '@/lib/scrapers/afad';
+import { getDepremIoData } from '@/lib/scrapers/deprem-io';
+import { getUSGSData } from '@/lib/scrapers/usgs';
 import { filterByLocation, filterBySize, filterByTime } from '@/lib/filters';
 import { getCache, setCache } from '@/lib/cache';
 import { Earthquake, SourceType } from '@/lib/types';
@@ -21,7 +23,19 @@ export async function GET(request: NextRequest) {
     let fromCache = true;
     
     if (earthquakes.length === 0) {
-      earthquakes = type === 'afad' ? await getAfadData() : await getKandilliData();
+      switch (type) {
+        case 'afad':
+          earthquakes = await getAfadData();
+          break;
+        case 'depremio':
+          earthquakes = await getDepremIoData();
+          break;
+        case 'usgs':
+          earthquakes = await getUSGSData();
+          break;
+        default:
+          earthquakes = await getKandilliData();
+      }
       setCache(cacheKey, earthquakes);
       fromCache = false;
     }

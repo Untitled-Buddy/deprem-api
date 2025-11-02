@@ -23,7 +23,11 @@ Modern, web tabanlı deprem takip sistemi. AFAD ve Kandilli Rasathanesi verileri
 ## ✨ Özellikler
 
 - 🌐 **Web Arayüzü**: Modern ve kullanıcı dostu arayüz
-- 📊 **İki Veri Kaynağı**: AFAD ve Kandilli Rasathanesi
+- 📊 **4 Farklı Veri Kaynağı**: 
+  - 🏛️ Kandilli Rasathanesi (Resmi)
+  - 🚨 AFAD (Resmi)
+  - ⚡ Deprem.io (Anlık, Topluluk Tabanlı)
+  - 🌍 USGS (Dünya Çapında, Gerçek Zamanlı)
 - 🔍 **Gelişmiş Filtreleme**: Lokasyon, büyüklük, zaman bazlı filtreleme
 - ⚡ **Cache Sistemi**: Hızlı veri erişimi (5 dakika)
 - 🎨 **Dark/Light Mode**: Karanlık ve aydınlık tema desteği
@@ -187,10 +191,22 @@ Bu proje **İhsan Baki Doğan** tarafından açık kaynak olarak geliştirilmiş
 
 MIT License © 2025 İhsan Baki Doğan
 
-## 🙏 Kaynaklar
+## 🙏 Veri Kaynakları
 
-- [AFAD - Türkiye Afet ve Acil Durum Yönetimi Başkanlığı](https://www.afad.gov.tr/)
-- [Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü](http://www.koeri.boun.edu.tr/)
+### Resmi Kaynaklar
+- 🏛️ [Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü](http://www.koeri.boun.edu.tr/) - Türkiye'nin en eski deprem gözlem merkezi
+- 🚨 [AFAD - Türkiye Afet ve Acil Durum Yönetimi Başkanlığı](https://www.afad.gov.tr/) - Resmi devlet kurumu
+
+### Anlık ve Alternatif Kaynaklar
+- ⚡ [Deprem.io API](https://api.orhanaydogdu.com.tr/) - Topluluk tabanlı, anlık deprem bildirimleri
+- 🌍 [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/) - Amerika Jeoloji Araştırmaları, dünya çapında gerçek zamanlı deprem verileri
+
+### Neden Birden Fazla Kaynak?
+
+1. **Hız**: Deprem.io ve USGS daha hızlı güncellenir
+2. **Doğruluk**: Resmi kaynaklar (Kandilli, AFAD) daha doğru ve detaylı analiz sunar
+3. **Kapsam**: USGS dünya çapında deprem verisi sağlar
+4. **Yedeklilik**: Bir kaynak çalışmazsa diğerleri devreye girer
 
 ## ⭐ Destek
 

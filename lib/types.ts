@@ -22,7 +22,7 @@ export interface Earthquake {
   afadDetails?: AfadDetails;
 }
 
-export type SourceType = 'kandilli' | 'afad';
+export type SourceType = 'kandilli' | 'afad' | 'depremio' | 'usgs';
 
 export interface EarthquakeResponse {
   earthquakes: Earthquake[];
