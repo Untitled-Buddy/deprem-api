@@ -10,6 +10,16 @@ Modern, web tabanlı deprem takip sistemi. AFAD ve Kandilli Rasathanesi verileri
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ibidi/deprem-api)
 
+## 📸 Ekran Görüntüleri
+
+<div align="center">
+  <img src="ss-1.png" alt="Deprem Takip Sistemi - Ana Sayfa" width="100%">
+  <p><em>Ana sayfa ve filtreleme özellikleri</em></p>
+  
+  <img src="ss-2.png" alt="Deprem Takip Sistemi - Deprem Listesi" width="100%">
+  <p><em>Gerçek zamanlı deprem listesi ve detaylar</em></p>
+</div>
+
 ## ✨ Özellikler
 
 - 🌐 **Web Arayüzü**: Modern ve kullanıcı dostu arayüz
